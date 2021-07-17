@@ -150,6 +150,7 @@ main{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  
 }
 
 .title{
@@ -199,6 +200,7 @@ main{
   width: 70%;
   justify-content: center;
   gap: 30px;
+  margin-bottom: 50px;
 
 }
 
