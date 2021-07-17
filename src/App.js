@@ -32,7 +32,7 @@ function App() {
       <h2>Our menu</h2>
       </div>
       <Switch>
-        <Route exact path="/">
+        <Route path="/">
         <Categories categories={categories} filterItems={filterItems}/>
         <Menu menuItems={menuItems}/>
         </Route>
