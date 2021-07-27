@@ -6,36 +6,35 @@ Variables
 
 :root {
   /*my globals*/
-  
-  --back-white:#fff;
-  --back-black:#000;
-  --back-white-overlay:rgba(255, 255, 255, 0.178);
-  --black-overlay:rgba(0, 0, 0, 0.493);
-  --shadow-overlay:rgba(0, 0, 0, 0.068);
-  --btncolor:#F4442E;
-  --titlecolor:#363457;
-  --btn-hovercolor:#226F54;
-  --btn-hovercolor-overlay:#226f543a;
-  --extra-color: #9CFFFA;
+
+  --back-white: #fff;
+  --back-black: #000;
+  --back-white-overlay: rgba(255, 255, 255, 0.178);
+  --black-overlay: rgba(0, 0, 0, 0.493);
+  --shadow-overlay: rgba(0, 0, 0, 0.068);
+  --btncolor: #f4442e;
+  --titlecolor: #363457;
+  --btn-hovercolor: #226f54;
+  --btn-hovercolor-overlay: #226f543a;
+  --extra-color: #9cfffa;
 
   /* blur filter  */
-  --blur:blur(3px);
-
+  --blur: blur(3px);
 
   /* letter spacing  */
-  --spacing:1px;
-  --spacing2:2px;
+  --spacing: 1px;
+  --spacing2: 2px;
 
   /* border-radius  */
-  --radius:50px;
-  --radius2:20px;
+  --radius: 50px;
+  --radius2: 20px;
 
   /* transition  */
-  --transition-ease:all 0.3s ease;
+  --transition-ease: all 0.3s ease;
 
   /* container padding  */
-  --pading20:20px;
-  --pading-img:20px 0px;
+  --pading20: 20px;
+  --pading-img: 20px 0px;
 
   /* margin  */
   --marginTop: 2rem 0 0 0;
@@ -58,13 +57,12 @@ Global Styles
   box-sizing: border-box;
 }
 body {
-  font-family:'poppins', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: "poppins", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;
   /* line-height: 1.5; */
   font-size: 15px;
   background-color: var(--back-white);
 }
-
 
 /*global css */
 ul {
@@ -78,7 +76,7 @@ h2,
 h3,
 h4 {
   text-transform: capitalize;
-  color:var(--titlecolor)
+  color: var(--titlecolor);
 }
 h1 {
   font-size: 30px;
@@ -106,23 +104,25 @@ p {
   color: var(--titlecolor);
 }
 
-a,button{
-  background-color:transparent;
+a,
+button {
+  background-color: transparent;
   outline: none;
   border: none;
-  padding:0px;
-  
+  padding: 0px;
+
   font-size: 14px;
   font-weight: 400 !important;
   font-family: "poppins";
   /* letter-spacing: 0.2px; */
-  
-  color:var(--btncolor);
+
+  color: var(--btncolor);
   transition: 0.3s ease;
-  cursor:pointer;
+  cursor: pointer;
 }
 
-a:hover,button:hover{
+a:hover,
+button:hover {
   color: var(--btn-hovercolor);
 }
 
@@ -134,32 +134,31 @@ menu
 ===============
 */
 
-main{
+main {
   width: 100%;
   height: 100vh;
   background-color: var(--back-white);
   display: flex;
   justify-content: center;
-  padding:50px 80px;
   flex-wrap: wrap;
 }
 
-.container{
+.container {
   width: 100%;
   margin: 0px auto;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  
+  padding: 50px 80px;
 }
 
-.title{
+.title {
   width: 100%;
   text-align: center;
   margin-bottom: 40px;
 }
 
-.btn-wrapper{
+.btn-wrapper {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -167,22 +166,22 @@ main{
   gap: 20px;
 }
 
-.btn-wrapper a{
+.btn-wrapper a {
   text-transform: capitalize;
   font-size: 15px;
   font-weight: 500 !important;
   font-family: "poppins";
 }
 
-.title h2{
+.title h2 {
   width: fit-content;
   margin: 0 auto;
   position: relative;
   padding-bottom: 5px;
 }
 
-.title h2::before{
-  content: '';
+.title h2::before {
+  content: "";
   position: absolute;
   bottom: 0;
 
@@ -193,40 +192,37 @@ main{
   background-color: var(--btncolor);
 }
 
-
-.menu-section{
+.menu-section {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   width: 70%;
   justify-content: center;
   gap: 30px;
   margin-bottom: 50px;
-
 }
 
-.menu-content{
+.menu-content {
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 5px;
   box-shadow: var(--box-shadow);
   padding: 20px;
   transition: 0.3s ease;
+  /* cursor: pointer; */
 }
 
-.menu-content:hover .menu-img img{
+.menu-content:hover .menu-img img {
   transform: scale(1.06);
 }
 
-
-
-.menu-img{
+.menu-img {
   width: 100%;
   height: 200px;
   margin-bottom: 10px;
   overflow: hidden;
 }
 
-.menu-img img{
+.menu-img img {
   width: 100%;
   height: 100%;
   display: block;
@@ -235,47 +231,101 @@ main{
   transition: 0.3s ease;
 }
 
-
-
-.menu-title,.menu-category
-,.menu-desc,.menu-readmore{
+.menu-title,
+.menu-category,
+.menu-desc,
+.menu-readmore {
   width: 100%;
 }
 
-.menu-title{
+.menu-title {
   display: flex;
   flex-wrap: wrap;
-  justify-content:space-between;
+  justify-content: space-between;
   align-items: start;
-  padding:10px 0px;
+  padding: 10px 0px;
   border-bottom: 1px solid var(--btn-hovercolor-overlay);
-
 }
 
-
-
-
-
-
-
-.menu-price span{
+.menu-price span {
   font-size: 14px;
 }
 
-.menu-desc{
+.menu-desc {
   min-height: 100px;
 }
 
+/* single component  */
+.single.sec{
+  width: 100%;
+  min-height: 100vh;
+  height: 100vh;
+}
 
+.sec-container {
+  width: 100%;
+  max-width: 800px;
+  padding: 0px 80px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+.sec-container .menu-content {
+  row-gap: 10px;
+  box-shadow: var(--box-shadow);
+  padding: 20px;
+  transition: 0.3s ease;
+}
+
+.sec-container .menu-content:hover .menu-img img {
+  transform: scale(1);
+}
+
+.sec-container .menu-img {
+  width: 100%;
+  height: 500px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.sec-container .menu-title{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  align-items: start;
+  padding: 20px;
+  gap: 10px;
+  border-bottom: none;
+}
+.sec-container .menu-title h1{
+ color: var(--back-white);
+ text-transform: capitalize;
+ width: 100%;
+}
+
+.sec-container .menu-price span {
+  font-size: 20px;
+  color: var(--back-white);
+}
+
+.sec-container .menu-content .menu-desc{
+  min-height:0;
+}
 
 /*  responsive */
 
 @media screen and (max-width: 1000px) {
-
   h1 {
     font-size: 23px;
   }
-  h2{
+  h2 {
     font-size: 20px;
   }
   h3 {
@@ -287,45 +337,62 @@ main{
   p {
     font-size: 13px;
   }
-  
-  button{
+
+  a {
     font-size: 14px;
   }
 
-  main{
-    padding:50px 40px;
+  .container {
+    padding: 50px 40px;
   }
 
-  .menu-section{
+  .menu-section {
     grid-template-columns: 1fr 1fr;
     width: 80%;
     gap: 30px;
-  
   }
 
-
-  .menu-title h3{
+  .menu-title h3 {
     width: 70%;
   }
-  
-  .menu-title .menu-price{
+
+  .menu-title .menu-price {
     width: 30%;
     text-align: right;
   }
 
-  
+  /* single component  */
+.single.sec{
+  width: 100%;
+  min-height: 700px;
+}
 
+.sec-container {
+  max-width: 800px;
+  padding: 0px 80px;
+}
+
+.sec-container .menu-title h1{
+  font-size: 20px;
+ }
+ 
+ .sec-container .menu-price{
+   width: 100%;
+   text-align: left;
+ }
+
+ .sec-container .menu-price span{
+  font-size: 16px;
+}
 
 }
 
-
 @media screen and (max-width: 700px) {
-
   h1 {
     font-size: 20px;
   }
-  h2{
-    font-size:18px;
+  h2 {
+    font-size: 18px;
   }
   h3 {
     font-size: 16px;
@@ -337,38 +404,101 @@ main{
     font-size: 12px;
   }
 
-  button{
+  a {
     font-size: 12px;
   }
 
-  .menu-desc{
+  .menu-desc {
     min-height: 50px;
   }
 
-  
-
-
-
-  .menu-section{
+  .menu-section {
     grid-template-columns: 1fr;
-    width: 60%;
+    width: 100%;
     gap: 30px;
+  }
+
+
+  /* single component  */
+  .sec-container {
+    padding: 0px 40px;
+  }
+
   
+  .sec-container .menu-img {
+    height: 400px;
   }
   
 
+  .sec-container .menu-title h1{
+    font-size: 18px;
+   }
+   
+   .sec-container .menu-price span{
+     font-size: 14px;
+   }
+ 
+}
+
+@media screen and (max-width:500px) {
+  /* single component  */
+  .sec-container {
+    padding: 0px 20px !important;
+  }
+
+  
+  .sec-container .menu-img {
+    height: 300px !important;
+  }
   
 
+  .sec-container .menu-title h1{
+    font-size: 16px !important;
+   }
+   
+   .sec-container .menu-price span{
+     font-size: 12px !important;
+   }
+}
 
+@media screen and (max-width: 400px) {
+  .btn-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 10px;
+  }
+  
+  .btn-wrapper a {
+    font-size: 12px;
+  }
 
+  /* single component  */
+  .sec-container {
+    padding: 0px !important;
+  }
+
+  
+  .sec-container .menu-img {
+    height: 300px !important;
+  }
+  
+
+  .sec-container .menu-title h1{
+    font-size: 16px !important;
+   }
+   
+   .sec-container .menu-price span{
+     font-size: 12px !important;
+   }
 }
 @media screen and (max-width: 300px) {
-
   h1 {
     font-size: 18px;
   }
-  h2{
-    font-size:16px;
+  h2 {
+    font-size: 16px;
   }
   h3 {
     font-size: 14px;
@@ -378,7 +508,16 @@ main{
   }
   p {
     font-size: 10px;
-  } 
+  }
 
+  .container {
+    padding: 50px 20px;
+  }
 
+  .btn-wrapper {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    gap: 10px;
+  }
 }
